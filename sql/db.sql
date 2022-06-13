@@ -1,0 +1,17 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `regDate` TIMESTAMP NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cities` (
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `city` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

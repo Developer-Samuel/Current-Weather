@@ -1,0 +1,392 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.index-body
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(weather.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+}
+
+.container h1
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70px;
+    color: #2798FF;
+    font-size: 46px;
+    text-shadow: 5px 2px 5px black;
+}
+
+.add-city-search-weather
+{
+    position: absolute;
+    transform: translate(0%, -50%);
+    left: 20px;
+    top: 50px; 
+    border: 2px solid white;
+    background: #4fc7ff80;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.add-city, .delete-city
+{
+    position: absolute;
+    transform: translate(0%, -50%);
+    left: 2%;
+    top: 50%; 
+    border: 2px solid white;
+    padding: 35px;
+    border-radius: 50%;
+}
+
+.add-city
+{
+    background: #6DFF6D80;
+}
+
+.delete-city
+{
+    background: #FF312980;
+}
+
+.add-city-search-weather:hover
+{
+    background: #4FC7FF;
+}
+
+.add-city:hover
+{
+    background: #6DFF6D;
+}
+
+.delete-city:hover
+{
+    background: #FF3129;
+}
+
+.logout
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 95%;
+    top: 50px; 
+    border: 2px solid #1779E3;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.add-city-search-weather a, .logout a
+{
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+}
+
+.add-city a, .delete-city a
+{
+    font-size: 30px;
+    padding: 40px 40px;
+    border-radius: 50%;
+    color: white;
+}
+
+.add-city-search-weather:hover, .add-city:hover, .delete-city:hover, .logout:hover a
+{
+    color: #67B0FF;
+    transition: 0.6s;
+}
+
+.form-weather
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50vh;
+    background: #444;
+    color: white;
+    border: 1px solid white;
+}
+
+.form-weather p,
+.form-weather input[type="submit"]
+{
+    position: relative;
+    top: 40px;
+}
+
+.form-weather input[name="submit"]
+{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top: 100px;
+    border-radius: 50%;
+    color: white;
+    background: #1779E3;
+    border: 1px solid black;
+}
+
+.form-weather input[name="add"]
+{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top: 50px;
+    border-radius: 50%;
+    color: white;
+    background: #1779E3;
+    border: 1px solid black;
+}
+
+.form-weather p label
+{
+    font-size: 18px;
+}
+
+.form-weather p input
+{
+    width: 35%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.form-weather .city
+{
+    position: absolute;
+    width: 35%;
+    height: 35px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 105px;
+    font-weight: bold;
+}
+
+.form-weather .city option
+{
+    font-weight: bold;
+}
+
+.form-weather #p-choose-city
+{
+    font-size: 18px;
+}
+
+.arrow 
+{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left 
+{
+    transform: rotate(135deg);
+}
+
+.alert-danger
+{
+    position: absolute;
+    transform: translate(-50%, -100%);
+    width: 100%;
+    left: 50%;
+    top: 100%;
+    padding: 75px;
+}
+
+.alert-success
+{
+    position: absolute;
+    transform: translate(-50%, -100%);
+    width: 100%;
+    left: 50%;
+    top: 100%;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.pictogram
+{
+    width: 75px;
+}
+
+.city-village
+{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.country
+{
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+
+/* LOGIN, SIGN UP*/
+
+#h1-logreg
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70px;
+    color: white;
+    font-size: 46px;
+    text-shadow: 5px 2px 5px black;
+}
+
+.login-body, .signup-body
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1cc3fd, #00aeff, #0098ff, #007eff, #0d5ff8);
+}
+
+.form-login, .form-signup
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    background: #92D5FF;
+    border: 1px solid black;
+}
+
+.form-login
+{
+    height: 50vh;
+}
+
+.form-signup
+{
+    height: 65vh;
+}
+
+.form-login p, .form-login input[type="submit"], .form-signup p, .form-signup input[type="submit"]
+{
+    position: relative;
+    top: 85px;
+}
+
+.form-login p, .form-signup p
+{
+    margin: 0px;
+}
+
+.form-login input[type="submit"], .form-signup input[type="submit"]
+{
+    margin: 30px;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background: #1779E3;
+    border: 1px solid black;
+}
+
+.form-login p label, .form-signup p label
+{
+    font-size: 18px;
+    color: black;
+}
+
+.form-login p input, .form-signup p input
+{
+    width: 40%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.form-login .small
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 85%;
+    font-size: 14px;
+}
+
+.form-signup .small
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 80%;
+    font-size: 14px;
+}
+
+.form-weather input[type="submit"]:hover, .form-login input[type="submit"]:hover, .form-signup input[type="submit"]:hover
+{
+    cursor: pointer;;
+    border: 1px solid white;
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+
+.table-cities
+{
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    top: 500px;
+    border: 2px solid white;
+    background: #1779E3;
+    color: white;
+}
+
+.table-cities tr
+{
+    border: 1px solid white;
+    font-size: 22px;
+}
+
+.table-cities tr td
+{
+    padding: 10px 100px;
+}
+
+.table-cities tr td a
+{
+    color: white;
+}
+
+.no-records
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-size: 100px;
+    font-style: italic;
+    color: white;
+    text-shadow: 8px 3px 8px black;
+    border-bottom: 1px solid white;
+}
